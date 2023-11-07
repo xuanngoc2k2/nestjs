@@ -1,12 +1,12 @@
 import { Module } from "@nestjs/common";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { SvHpEntity } from "src/Entity/sinhvienhocphan.entity";
+import { SvHp } from "src/Entity/sinhvienhocphan.entity";
 
 @Module({
-    imports:[
-        TypeOrmModule.forFeature([SvHpEntity])
+    imports: [
+        TypeOrmModule.forFeature([SvHp])
     ]
 })
-export class SVHPModel{
+export class SVHPModel {
 
 }

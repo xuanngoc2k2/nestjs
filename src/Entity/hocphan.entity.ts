@@ -1,9 +1,7 @@
 import { Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm"
-import { NganhEntity } from "./nganh.entity"
-import { SvHpEntity } from "./sinhvienhocphan.entity"
 
 @Entity()
-export class HocPhanEntity {
+export class HocPhan {
     @PrimaryGeneratedColumn()
     id: number
 

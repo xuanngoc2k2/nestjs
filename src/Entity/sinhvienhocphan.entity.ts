@@ -1,10 +1,7 @@
 import { Column, Double, Entity, JoinColumn, JoinTable, ManyToMany, OneToMany, OneToOne, PrimaryColumn } from "typeorm"
-import { SinhVienEntity } from "./sinhvien.entity"
-import { HocPhanEntity } from "./hocphan.entity"
-import { UserEntity } from "./user.entity"
 
 @Entity()
-export class SvHpEntity {
+export class SvHp {
     @PrimaryColumn()
     masv: number
 

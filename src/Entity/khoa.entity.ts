@@ -1,8 +1,7 @@
 import { Column, Entity, OneToMany, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm"
-import { NganhEntity } from "./nganh.entity"
 
 @Entity()
-export class KhoaEntity {
+export class Khoa {
     @PrimaryGeneratedColumn()
     id: number
 
