@@ -16,18 +16,33 @@ export class SinhVienService {
     }
 
     findAll() {
-        return `Timf all`
+        console.log(this.userRepo.find())
+        return this.userRepo.find();
     }
 
     findOne(id: number) {
-        return `This action returns a #${id} user`;
+        return this.userRepo.findOne({
+            where: {
+                msv: id
+            }
+        });
     }
 
-    update(id: number, updateSv: SinhVienDto) {
-        return `This action updates a #${id} user`;
+    async update(id: number, updateSv: SinhVienDto): Promise<string> {
+        if (await this.userRepo.update(id, updateSv)) {
+            return `UpdateOk`;
+        }
+        else {
+            return `Khoong update dc`;
+        }
     }
 
-    remove(id: number) {
-        return `This action removes a #${id} user`;
+    async remove(id: number): Promise<string> {
+        if (await this.userRepo.delete(id)) {
+            return `Delete Ok`;
+        }
+        else {
+            return `Khoong delete dc`;
+        }
     }
 }
