@@ -9,6 +9,6 @@ export class UserEntity {
     @Column()
     password: string
 
-    @OneToOne(() => SinhVienEntity, (sv) => sv.msv) // specify inverse side as a second parameter
-    user: SinhVienEntity
+    // @OneToOne(() => SinhVienEntity, (sv) => sv.msv) // specify inverse side as a second parameter
+    // user: SinhVienEntity
 }

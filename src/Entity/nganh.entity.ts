@@ -16,9 +16,9 @@ export class NganhEntity {
     @Column()
     mota: string
 
-    @ManyToOne(() => KhoaEntity, (khoa) => khoa.nganhs)
-    khoa: KhoaEntity
+    // @ManyToOne(() => KhoaEntity, (khoa) => khoa.nganhs)
+    // khoa: KhoaEntity
 
-    @OneToMany(() => HocPhanEntity, (hp) => hp.nganh)
-    hps: HocPhanEntity[]
+    // @OneToMany(() => HocPhanEntity, (hp) => hp.nganh)
+    // hps: HocPhanEntity[]
 }

@@ -23,9 +23,9 @@ export class SvHpEntity {
     @Column('double')
     diemkt: number
 
-    @OneToMany(() => HocPhanEntity, (hp) => hp.nganh)
-    hps: HocPhanEntity[]
+    // @OneToMany(() => HocPhanEntity, (hp) => hp.nganh)
+    // hps: HocPhanEntity[]
 
-    @OneToMany(() => UserEntity, (sv) => sv.id)
-    user: UserEntity[]
+    // @OneToMany(() => UserEntity, (sv) => sv.id)
+    // user: UserEntity[]
 }

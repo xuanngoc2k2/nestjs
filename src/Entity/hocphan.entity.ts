@@ -28,11 +28,11 @@ export class HocPhanEntity {
     @Column()
     hocki: string
 
-    @ManyToOne(() => NganhEntity, (nganh) => nganh.id)
-    nganh: NganhEntity
+    // @ManyToOne(() => NganhEntity, (nganh) => nganh.id)
+    // nganh: NganhEntity
 
-    @ManyToOne(() => SvHpEntity, (svhp) => svhp.mahp)
-    //@JoinColumn({ name: "mahp" }) // Specify the foreign key column
-    svhp: SvHpEntity;
+    // @ManyToOne(() => SvHpEntity, (svhp) => svhp.mahp)
+    // //@JoinColumn({ name: "mahp" }) // Specify the foreign key column
+    // svhp: SvHpEntity;
 
 }

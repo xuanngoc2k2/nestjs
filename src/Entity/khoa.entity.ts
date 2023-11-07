@@ -15,6 +15,6 @@ export class KhoaEntity {
     @Column()
     mota: string
 
-    @OneToMany(() => NganhEntity, (nganh) => nganh.id)
-    nganhs: NganhEntity[]
+    // @OneToMany(() => NganhEntity, (nganh) => nganh.id)
+    // nganhs: NganhEntity[]
 }
